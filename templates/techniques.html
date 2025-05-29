@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="quarantine, haircut, self-cut, clippers, trimmers, shavers, razors" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='css/cuts_grid.css') }}" rel="stylesheet" />
+  <title>Techniques</title>
+</head>
+
+<body class="site-layout">
+  <!-- Header/Banner -->
+  <div class="banner-row">
+    <a target="_top" href="{{ url_for('home') }}">
+        <img src="{{ url_for('static', filename='images/headtitle.png') }}" alt="Site Name" class="banner-img" />
+    </a>
+    <a target="_top" href="{{ url_for('home') }}">
+        <img src="{{ url_for('static', filename='images/namebanner.png') }}" alt="Author Name" class="banner-img" />
+    </a>
+     </div>
+
+  <div class="my-grid-container">
+    <header>
+      <div class="header">
+        <h1>Est. 2020</h1>
+      </div>
+      <nav class="horizontalNavigation">
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('tools') }}">Tools</a></li>
+          <li><a href="{{ url_for('techniques') }}">Techniques</a></li>
+          <li><a href="{{ url_for('maintenance') }}">Maintenance</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact &amp; FAQs</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+      <div class="pic">
+        <img src="{{ url_for('static', filename='images/haircut1.jpg') }}" class="gallery-img" alt="Haircut With Kids" width="600" height="400" />
+        <div class="desc"><h6>Haircut With Kids</h6></div>
+      </div>
+
+      <div class="pic">
+        <img src="{{ url_for('static', filename='images/haircut2.jpg') }}" class="gallery-img" alt="Haircut Indoors" width="600" height="400" />
+        <div class="desc"><h6>Haircut Indoors</h6></div>
+      </div>
+
+      <div class="pic">
+        <img src="{{ url_for('static', filename='images/haircut3.jpg') }}" class="gallery-img" alt="Haircut Outdoors" width="600" height="400" />
+        <div class="desc"><h6>Haircut Outdoors</h6></div>
+      </div>
+    </div>
+
+    <!-- Technique Explanations -->
+    <div class="rectools">
+      <h2>Clipper Techniques</h2>
+      <p><strong>The Crown:</strong>
+        <br>
+        When trimming someone’s hair, be wary of their crown. When hair thinning occurs, the crown 
+        is one of the first places that starts to thin. By trimming the top of the head using one 
+        size, a thinning crown stands out more than it should. You can combat this by using a guard 
+        size <em>higher</em> when you’re going over the crown, for example, using a size 3 guard 
+        with a closed blade to trim the top and then switching over to a size 4 guard with a closed 
+        blade to trim the thinning area.
+      </p>
+
+      <p><strong>Skin Line:</strong>
+        <br>
+        When attempting to fade, it’s always easier to do so by creating layer guides so that you 
+        can fade section by section. You can start off your first line, often referred to as the 
+        “skin line,” by using your detailer to trim a line all around that starts right above ear 
+        level for what’s called a “mid fade.” The placement of the skin line can vary depending on 
+        how high or how low you want the fade to be. Everything below the skin line is going to be 
+        trimmed off to the lowest size or shaved off if that’s your preference.
+      </p>
+
+      <p><strong>Guide Lines:</strong>
+        <br>
+            After the skin line, you can use your clippers to create the other guide lines. Every 
+            guide line after this one will be done using the following techniques. Starting with 
+            your clippers with no guard and an open blade, you will start from the bottom of your 
+            skin line and trim about a finger’s width all around the head to get that first layer. 
+            After this, you can go up and repeat the process using a size one guard on your clippers 
+            with an open blade, and again with a size 2 guard open blade. Do not go past temple level.
+      </p>
+
+      <p><strong>Fading:</strong>
+        <br>
+            When you have defined guide lines, fading them is a little easier because you know where 
+            to fade and where to stop. The guide lines are made so that you know where to stop cutting 
+            with a certain size. For example from skin line to the no guard open blade, you will 
+            <strong>only</strong> use the clippers with no guard, open blade. To begin fading, you 
+            will go over that same section again but this time, closing the blades halfway. Once 
+            you’ve gone all the way around, you can close the blades completely and use a scooping 
+            motion on the skin line as if you’re trying to scoop it out. It’s important to note that 
+            when trimming with closed blades, to only attack the actual remaining skin line and not 
+            go up any further. The last thing you want to do is push the line up. You can repeat this 
+            process moving onto the next guide line with the next guard size.
+      </p>
+    </div>
+
+    <br />
+
+    <div class="rectools2">
+      <h2>Shaving Tips</h2>
+      <p>
+        When using a shavette to shave arears or clean up edged, use warm water and shaving cream on 
+        the area you will be shaving so that it can go as smooth as possible.
+        <br>
+        Always remember to change your blade after every use to avoid using a dull blade that may 
+        tug at hairs or cut your skin. Shaving, if done right, should not be rough on your skin and 
+        the blade should be able to glide down as you shave.
+        <br>
+        Because the blades are so thin, they are razor sharp and can cut you at the slightest wrong 
+        movement when shaving. For this reason, never use a shavette in a way that will have you 
+        using the tool going horizontally instead of vertically.
+        <br>
+        Pulling your skin slightly upwards while shaving downwards can help you get a closer shave 
+        and makes it easier for the razor to slide down on your skin to avoid it from tugging the hairs.
+      </p>
+    </div>
+
+    <br>
+
+    <div class="links">
+      <h3>Social Media Links</h3>
+      <a href="{{ url_for('techniques') }}">Twitter</a>
+      <a href="{{ url_for('techniques') }}">Instagram</a>
+      <a href="{{ url_for('techniques') }}">Facebook</a>
+      <a href="{{ url_for('techniques') }}">TikTok</a>
+    </div>
+  </div>
+</body>
+</html>
