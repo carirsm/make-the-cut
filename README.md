@@ -1,6 +1,6 @@
 # ✂️ Make The Cut
 
-**Make The Cut** is a personal HTML/CSS-based web project originall built for my CIS162 class and expanded for portfolio use to simplify self-haircutting for beginners. Inspired by the DIY spirit of the 2020 pandemic lockdown, this site offers accessible tools, tips, and techniques to help people learn how to cut their own hair — without breaking the bank.
+**Make The Cut** is a personal HTML/CSS-based web project originally built for my CIS162 class and expanded for portfolio use to simplify self-haircutting for beginners. Inspired by the DIY spirit of the 2020 pandemic lockdown, this site offers accessible tools, tips, and techniques to help people learn how to cut their own hair — without breaking the bank.
 
 ## 💡 Purpose
 
